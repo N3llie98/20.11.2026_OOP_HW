@@ -12,12 +12,12 @@ public:
 	CPU(string model, int cores, double price);
 
 	//METHODS
-	void printInfo();
+	void printInfo()const;
 
 	//GETTERS
-	string getModel();
-	int getCores();
-	double getPrice();
+	string getModel()const;
+	int getCores()const;
+	double getPrice()const;
 	//SETTERS
 	void setModel(string model);
 	void setCores(int cores);

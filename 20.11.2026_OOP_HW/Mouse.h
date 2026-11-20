@@ -11,11 +11,11 @@ public:
 	Mouse(double _weight, unsigned int _dpi);
 
 	//METHODS
-	void printInfo();
+	void printInfo()const;
 
 	//GETTERS
-	double getWeight();
-	unsigned int getDpi();
+	double getWeight()const;
+	unsigned int getDpi()const;
 	//SETTERS
 	void setWeight(double _weight);
 	void setDpi(unsigned int _dpi);

@@ -11,11 +11,11 @@ public:
 	Cam(unsigned short _resolutionHeight, unsigned short _resolutionWidth);
 
 	//METHODS
-	void printInfo();
+	void printInfo()const;
 
 	//GETTERS
-	unsigned short getResolutionHeight();
-	unsigned short getResolutionWidth();
+	unsigned short getResolutionHeight()const;
+	unsigned short getResolutionWidth()const;
 	//SETTERS
 	void setResolutionHeight(unsigned short _resolutionHeight);
 	void setResolutionWidth(unsigned short _resolutionWidth);

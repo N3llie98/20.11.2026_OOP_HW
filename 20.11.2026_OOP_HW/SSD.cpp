@@ -18,28 +18,28 @@ SSD::SSD(double _price, string _model, long long _capacityInBytes, long long _re
 	readSpeed = _readSpeed;
 }
 
-void SSD::printInfo()
+void SSD::printInfo()const
 {
 	cout << "Price: " << price << "\nModel: " << model
-		<< "Capacity in bytes: " << capacityInBytes << "Read speed: " << readSpeed << endl;
+		<< "\nCapacity in bytes: " << capacityInBytes << "\nRead speed: " << readSpeed << endl;
 }
 
-double SSD::getPrice()
+double SSD::getPrice()const
 {
 	return price;
 }
 
-string SSD::getModel()
+string SSD::getModel()const
 {
 	return model;
 }
 
-long long SSD::getCapacityInBytes()
+long long SSD::getCapacityInBytes()const
 {
 	return capacityInBytes;
 }
 
-long long SSD::getReadSpeed()
+long long SSD::getReadSpeed()const
 {
 	return readSpeed;
 }

@@ -12,17 +12,17 @@ Mouse::Mouse(double _weight, unsigned int _dpi)
 	dpi = _dpi;
 }
 
-void Mouse::printInfo()
+void Mouse::printInfo()const
 {
 	cout << "Weight: " << weight << "\nDPI: " << dpi << endl;
 }
 
-double Mouse::getWeight()
+double Mouse::getWeight()const
 {
 	return weight;
 }
 
-unsigned int Mouse::getDpi()
+unsigned int Mouse::getDpi()const
 {
 	return dpi;
 }

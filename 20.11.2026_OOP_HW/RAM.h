@@ -12,12 +12,12 @@ public:
 	RAM(double _price, string _model, long long _memoryInBytes);
 
 	//METHODS
-	void printInfo();
+	void printInfo()const;
 
 	//GETTERS
-	double getPrice();
-	string getModel();
-	long long getMemoryInBytes();
+	double getPrice()const;
+	string getModel()const;
+	long long getMemoryInBytes()const;
 	//SETTERS
 	void setPrice(double _price);
 	void setModel(string _model);

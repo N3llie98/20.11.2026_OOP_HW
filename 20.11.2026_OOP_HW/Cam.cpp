@@ -12,17 +12,17 @@ Cam::Cam(unsigned short _resolutionHeight, unsigned short _resolutionWidth)
 	resolutionWidth = _resolutionWidth;
 }
 
-void Cam::printInfo()
+void Cam::printInfo()const
 {
 	cout << "Resolution Height: " << resolutionHeight << "\nResolution Width: " << resolutionWidth << endl;
 }
 
-unsigned short Cam::getResolutionHeight()
+unsigned short Cam::getResolutionHeight()const
 {
 	return resolutionHeight;
 }
 
-unsigned short Cam::getResolutionWidth()
+unsigned short Cam::getResolutionWidth()const
 {
 	return resolutionWidth;
 }

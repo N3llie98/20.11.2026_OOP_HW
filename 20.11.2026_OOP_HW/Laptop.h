@@ -21,16 +21,16 @@ public:
 	Laptop(CPU _cpu, RAM _ram, SSD _ssd, string _brand, double _price, Mouse* _mouse, Cam* cam);
 
 	//METHODS
-	void printInfo();
+	void printInfo()const;
 
 	//GETTERS
-	CPU getCpu();
-	RAM getRam();
-	SSD getSsd();
-	string getBrand();
-	double getPrice();
-	Mouse* getMouse();
-	Cam* getCam();
+	CPU getCpu()const;
+	RAM getRam()const;
+	SSD getSsd()const;
+	string getBrand()const;
+	double getPrice()const;
+	Mouse* getMouse()const;
+	Cam* getCam()const;
 	//SETTERS
 	void setCpu(CPU _cpu);
 	void setRam(RAM _ram);

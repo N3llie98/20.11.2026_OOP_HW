@@ -13,13 +13,13 @@ public:
 	SSD(double _price, string _model, long long _capacityInBytes, long long _readSpeed);
 
 	//METHODS
-	void printInfo();
+	void printInfo()const;
 
 	//GETTERS
-	double getPrice();
-	string getModel();
-	long long getCapacityInBytes();
-	long long getReadSpeed();
+	double getPrice()const;
+	string getModel()const;
+	long long getCapacityInBytes()const;
+	long long getReadSpeed()const;
 	//SETTERS
 	void setPrice(double _price);
 	void setModel(string _model);

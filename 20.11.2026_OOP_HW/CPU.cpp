@@ -16,7 +16,7 @@ CPU::CPU(string model, int cores, double price)
 	this->price = price;
 }
 
-void CPU::printInfo()
+void CPU::printInfo()const
 {
 	cout << "Model: " << model << "\nCores: " << cores
 		<< "\nPrice: $" << price << endl;
@@ -37,17 +37,17 @@ void CPU::setPrice(double price)
 	this->price = price;
 }
 
-string CPU::getModel()
+string CPU::getModel()const
 {
 	return model;
 }
 
-int CPU::getCores()
+int CPU::getCores()const
 {
 	return cores;
 }
 
-double CPU::getPrice()
+double CPU::getPrice()const
 {
 	return price;
 }

@@ -16,23 +16,23 @@ RAM::RAM(double _price, string _model, long long _memoryInBytes)
 	memoryInBytes = _memoryInBytes;
 }
 
-void RAM::printInfo()
+void RAM::printInfo()const
 {
 	cout << "Price: " << price << "\nModel: " << model
 		<< "\nMemory in bytes: " << memoryInBytes << endl;
 }
 
-double RAM::getPrice()
+double RAM::getPrice()const
 {
 	return price;
 }
 
-string RAM::getModel()
+string RAM::getModel()const
 {
 	return model;
 }
 
-long long RAM::getMemoryInBytes()
+long long RAM::getMemoryInBytes()const
 {
 	return memoryInBytes;
 }

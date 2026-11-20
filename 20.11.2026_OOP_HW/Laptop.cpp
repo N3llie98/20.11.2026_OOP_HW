@@ -17,7 +17,7 @@ Laptop::Laptop(CPU _cpu, RAM _ram, SSD _ssd, string _brand, double _price, Mouse
 	cam = _cam;
 }
 
-void Laptop::printInfo()
+void Laptop::printInfo()const
 {
 	cout << "-Laptop:\nBrand: " << brand << "\nPrice: " << price << endl;
 	cout << "-CPU:\n";
@@ -32,37 +32,37 @@ void Laptop::printInfo()
 	(*cam).printInfo();
 }
 
-CPU Laptop::getCpu()
+CPU Laptop::getCpu()const
 {
 	return cpu;
 }
 
-RAM Laptop::getRam()
+RAM Laptop::getRam()const
 {
 	return ram;
 }
 
-SSD Laptop::getSsd()
+SSD Laptop::getSsd()const
 {
 	return ssd;
 }
 
-string Laptop::getBrand()
+string Laptop::getBrand()const
 {
 	return brand;
 }
 
-double Laptop::getPrice()
+double Laptop::getPrice()const
 {
 	return price;
 }
 
-Mouse* Laptop::getMouse()
+Mouse* Laptop::getMouse()const
 {
 	return mouse;
 }
 
-Cam* Laptop::getCam()
+Cam* Laptop::getCam()const
 {
 	return cam;
 }
